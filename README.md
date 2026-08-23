@@ -1,0 +1,1 @@
+# gore_english_school

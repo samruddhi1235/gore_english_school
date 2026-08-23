@@ -5,6 +5,13 @@
 }
 body {
   font-family: 'Arial', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 .map-container {
   margin-top: 2rem;
@@ -182,4 +189,175 @@ footer .social-icon {
 
 footer .social-icon:hover {
   color: #f39c12; 
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  header {
+    padding: 16px 0 20px;
+  }
+
+  .school-name {
+    padding: 0 8px;
+  }
+
+  h1,
+  .hero-content h1 {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  .logo {
+    position: static;
+    width: 76px;
+    margin: 0 auto 10px;
+  }
+
+  nav {
+    margin-top: 12px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 0 auto;
+    max-width: 380px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.18);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+  }
+
+  nav ul li {
+    flex: 0 0 calc(50% - 4px);
+    min-width: 0;
+  }
+
+  nav ul li a {
+    width: 100%;
+    display: block;
+    min-height: 42px;
+    padding: 11px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  nav ul li a:hover,
+  nav ul li a:focus-visible {
+    background: #f39c12;
+    color: #080a33;
+  }
+
+  .slideshow-container {
+    height: auto;
+    min-height: 280px;
+  }
+
+  .mySlides img,
+  .slideshow-container .mySlides img {
+    width: 100% !important;
+    height: 280px !important;
+    object-fit: cover;
+  }
+
+  .principal {
+    position: static !important;
+    width: calc(100% - 32px) !important;
+    margin: 16px auto;
+    transform: none !important;
+  }
+
+  .principal img {
+    width: 160px !important;
+    height: 200px !important;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 160px;
+    padding: 32px 16px;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+  }
+
+  section {
+    padding: 36px 16px;
+  }
+
+  section h2,
+  h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  section p,
+  p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .image-container img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .map-container {
+    width: 100% !important;
+    margin-top: 24px;
+  }
+
+  .map-container iframe {
+    display: block;
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .contact-info {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .contact-info tbody,
+  .contact-info tr {
+    display: block;
+    width: 100%;
+  }
+
+  .contact-info td {
+    display: block;
+    width: 100% !important;
+  }
+
+  footer {
+    padding: 24px 16px;
+  }
+
+  footer .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  footer .social-icon {
+    margin: 0;
+  }
 }
